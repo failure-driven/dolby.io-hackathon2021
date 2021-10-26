@@ -5,14 +5,24 @@
 ```
 make
 make start-app1
+make start-app2
 ```
 
 ## monrepo
 
 - [app1](/app1)
+  simple static html page in a node app hosted on netilfy
   ```
   npm install
   npm start
+  ```
+  - deployed to https://dolbyio-hack1.netlify.app/
+
+- [app2](/app2)
+  simple ruby sinatra app to be hosted on heroku
+  ```
+  bundle
+  bundle exec rackup
   ```
   - deployed to https://dolbyio-hack1.netlify.app/
 
