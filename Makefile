@@ -1,6 +1,12 @@
 usage:
 	bin/makefile/usage
 
+# build
+prettier-check:
+	bin/makefile/prettier --check
+
+build: prettier-check
+
 # start
 start-app1:
 	cd app1 && npm install && npm start

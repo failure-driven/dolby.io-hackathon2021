@@ -17,6 +17,7 @@ _usage() {
   echo -e "${YELLOW}make start-app2${NC}        start app2"
   echo
   echo -e "${YELLOW}make prettier${NC}          lint and rubocop all code"
+  echo -e "${YELLOW}make build${NC}             run full build"
   echo
   echo -e "${GREEN}Development Setup${NC}"
   echo
