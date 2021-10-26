@@ -7,4 +7,5 @@
   npm install
   npm start
   ```
+  - deployed to https://dolbyio-hack1.netlify.app/
 
