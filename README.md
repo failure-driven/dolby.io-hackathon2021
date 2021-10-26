@@ -1,5 +1,12 @@
 # dolby.io-hackathon2021
 
+## tl;dr
+
+```
+make
+make start-app1
+```
+
 ## monrepo
 
 - [app1](/app1)
