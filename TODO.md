@@ -8,7 +8,7 @@
     https://docs.netlify.com/configure-builds/common-configurations/monorepos/)
   - [ ] ignore certain builds for netilfy deploys -
     https://docs.netlify.com/configure-builds/common-configurations/ignore-builds/
-  - [ ] heroku subdirectory sinatra deploy - [monorepo
+  - [x] heroku subdirectory sinatra deploy - [monorepo
     example](https://jtway.co/deploying-subdirectory-projects-to-heroku-f31ed65f3f2)
   - [ ] heroku subdirectory rails deploy
 

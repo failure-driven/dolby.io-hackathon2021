@@ -7,6 +7,7 @@ make
 make start-app1
 make start-app2
 make build
+make deploy
 ```
 
 ## monrepo
