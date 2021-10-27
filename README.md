@@ -35,14 +35,8 @@ make deploy
   - deployed to https://dolbyio-hack2.herokuapp.com/
 
 - [simple-conference-app](/simple-conference-app)
-  three quarters working, it seems environment variables from the shell ARE NOT
-  passed through to `npm` unless they are passed inline in the call
   ```
-  pushd simple-conference-app && \
-    DOLBY_IO_CONSUMER_KEY=RpW... \
-    DOLBY_IO_CONSUMER_SECRET=TyX... \
-    npm start && popd
-  # aiming for
+  source bin/load-env
   make start-simple-conference-app
   ```
 
