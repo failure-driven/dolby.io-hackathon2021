@@ -1,5 +1,7 @@
 //@ts-check
 // const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
+import { randomName } from "./client";
+
 const initUI = () => {
   const nameMessage = document.getElementById("name-message");
   nameMessage.innerHTML = `You are logged in as ${randomName}`;
@@ -133,7 +135,7 @@ const removeParticipantNode = (participant) => {
   }
 };
 
-const addScreenSahreNode = (stream) => {
+const addScreenShareNode = (stream) => {
   const screenShareContainer = document.getElementById("screenshare-container");
   let screenShareNode = document.getElementById("screenshare");
 
@@ -154,4 +156,14 @@ const removeScreenShareNode = () => {
     screenShareNode.srcObject = null; // Prevent memory leak in Chrome
     screenShareNode.parentNode.removeChild(screenShareNode);
   }
+};
+
+export {
+  initUI,
+  addVideoNode,
+  removeVideoNode,
+  addParticipantNode,
+  removeParticipantNode,
+  addScreenShareNode,
+  removeScreenShareNode,
 };

@@ -1,5 +1,15 @@
 //@ts-check
 // const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
+import {
+  initUI,
+  addVideoNode,
+  removeVideoNode,
+  addParticipantNode,
+  removeParticipantNode,
+  addScreenShareNode,
+  removeScreenShareNode,
+} from "./ui";
+
 const avengerNames = [
   "Thor",
   "Cap",
@@ -12,10 +22,8 @@ const avengerNames = [
 let randomName = avengerNames[Math.floor(Math.random() * avengerNames.length)];
 const main = async () => {
   VoxeetSDK.initialize(
-    "RpW...",
-    "TyX..."
-    // process.env.DOLBY_IO_CONSUMER_KEY,
-    // process.env.DOLBY_IO_CONSUMER_SECRET
+    process.env.DOLBY_IO_CONSUMER_KEY,
+    process.env.DOLBY_IO_CONSUMER_SECRET
   );
   try {
     await VoxeetSDK.session.open({ name: randomName });
@@ -25,7 +33,7 @@ const main = async () => {
   }
 
   VoxeetSDK.conference.on("streamAdded", (participant, stream) => {
-    if (stream.type === "ScreenShare") return addScreenSahreNode(stream);
+    if (stream.type === "ScreenShare") return addScreenShareNode(stream);
     if (stream.getVideoTracks().length) {
       addVideoNode(participant, stream);
     }
@@ -51,3 +59,5 @@ const main = async () => {
 };
 
 main();
+
+export { randomName };
