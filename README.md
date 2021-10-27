@@ -25,5 +25,5 @@ make build
   bundle
   bundle exec rackup
   ```
-  - deployed to https://dolbyio-hack1.netlify.app/
+  - deployed to https://dolbyio-hack2.herokuapp.com/
 
