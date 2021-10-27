@@ -31,7 +31,7 @@ update-dev-env: check-tools
 # Deployment
 deploy-app2:
 	HEROKU_APP_NAME=dolbyio-hack2 \
-	APP_DIR=app2 									\
+	APPLICATION_DIR=app2 \
   	bin/makefile/heroku-create
 
 deploy: deploy-app2
