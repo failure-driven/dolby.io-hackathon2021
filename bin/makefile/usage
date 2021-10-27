@@ -25,5 +25,10 @@ _usage() {
   echo -e "${YELLOW}make dev-env${NC}           install required developer environment"
   echo -e "${YELLOW}make update-dev-env${NC}    run brew update AND install required developer environment"
   echo
+  echo -e "${GREEN}Production${NC}"
+  echo
+  echo -e "${YELLOW}make deploy${NC}            deploy all the apps (appart for git hook deploys)"
+  echo -e "${YELLOW}make deploy-app2${NC}       deploy app2 to heorku"
+  echo
 }
 _usage
