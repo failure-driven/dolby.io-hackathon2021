@@ -1,5 +1,5 @@
 //@ts-check
-const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
+// const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
 const avengerNames = [
   "Thor",
   "Cap",
@@ -12,8 +12,10 @@ const avengerNames = [
 let randomName = avengerNames[Math.floor(Math.random() * avengerNames.length)];
 const main = async () => {
   VoxeetSDK.initialize(
-    process.env.DOLBY_IO_CONSUMER_KEY,
-    process.env.DOLBY_IO_CONSUMER_SECRET
+    "RpW...",
+    "TyX..."
+    // process.env.DOLBY_IO_CONSUMER_KEY,
+    // process.env.DOLBY_IO_CONSUMER_SECRET
   );
   try {
     await VoxeetSDK.session.open({ name: randomName });

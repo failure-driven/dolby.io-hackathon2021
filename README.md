@@ -34,3 +34,11 @@ make deploy
   ```
   - deployed to https://dolbyio-hack2.herokuapp.com/
 
+- [simple-conference-app](/simple-conference-app)
+  half working app
+  ```
+  cd simple-conference-app
+  # assuming keys are hard coded in client.js
+  make
+  ```
+

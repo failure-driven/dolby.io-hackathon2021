@@ -1,5 +1,5 @@
 //@ts-check
-const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
+// const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
 const initUI = () => {
   const nameMessage = document.getElementById("name-message");
   nameMessage.innerHTML = `You are logged in as ${randomName}`;
