@@ -1,5 +1,5 @@
 //@ts-check
-// const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
+const VoxeetSDK = require("@Voxeet/voxeet-web-sdk");
 import { randomName } from "./client";
 
 const initUI = () => {
