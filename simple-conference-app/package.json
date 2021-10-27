@@ -1,0 +1,20 @@
+{
+  "name": "simple-conference-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --https"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "@voxeet/voxeet-web-sdk": "^3.2.1"
+  }
+}

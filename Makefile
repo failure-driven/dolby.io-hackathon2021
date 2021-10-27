@@ -14,6 +14,9 @@ start-app1:
 start-app2:
 	pushd app2 && bundle && bundle exec rackup
 
+start-simple-conference-app:
+	pushd simple-conference-app && npm install && npm start
+
 # Development
 prettier:
 	bin/makefile/prettier

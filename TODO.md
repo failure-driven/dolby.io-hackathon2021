@@ -15,6 +15,9 @@
 ## examples
 
 - [ ] basic conference app - as per https://docs.dolby.io/communications-apis/docs/create-a-basic-audio-conference-application
+  - [ ] deploy as netlify app
+  - [ ] get working with VoxeetSDK from node_modules
+  - [ ] make sure ui.js and client.js export correctly
 - [ ] rust functions on netlify - https://www.netlify.com/blog/2021/10/14/write-netlify-functions-in-rust/
 - [ ] dolby API token server - https://github.com/dolbyio-samples/communications-api-token-server-netlify
 - [ ] cloudinary examples ...?
