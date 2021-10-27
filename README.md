@@ -4,9 +4,15 @@
 
 ```
 make
+
+make load-env
+source bin/load-env
+
 make start-app1
 make start-app2
+
 make build
+
 make deploy
 ```
 

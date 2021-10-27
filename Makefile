@@ -22,6 +22,9 @@ prettier:
 check-tools:
 	bin/makefile/check-tools
 
+load-env: check-tools
+	@echo "NOW RUN\n\tsource bin/load-env\n"
+
 dev-env: check-tools
 	bin/makefile/dev-env
 

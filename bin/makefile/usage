@@ -15,11 +15,14 @@ _usage() {
   echo
   echo -e "${YELLOW}make start-app1${NC}        start app1"
   echo -e "${YELLOW}make start-app2${NC}        start app2"
+  echo -e "${YELLOW}make start-simple-conference-app${NC}"
   echo
   echo -e "${YELLOW}make prettier${NC}          lint and rubocop all code"
   echo -e "${YELLOW}make build${NC}             run full build"
   echo
   echo -e "${GREEN}Development Setup${NC}"
+  echo
+  echo -e "${YELLOW}make load-env${NC}          load environment variables"
   echo
   echo -e "${YELLOW}make check-tools${NC}       check required tools"
   echo -e "${YELLOW}make dev-env${NC}           install required developer environment"

@@ -1,0 +1,14 @@
+# NOTE: could pass in a $1 for different env secrets
+
+if [ "$PRODUCTION" = "true" ] # confirm ENV VAR for netlify
+then
+  # do something special in netlify
+  ansible-vault decrypt --vault-password-file=~/vault_password env/*.secrets
+else
+  ansible-vault decrypt --ask-vault-pass env/*.secrets
+fi
+
+source env/*.secrets
+
+git checkout env/*.secrets
+
