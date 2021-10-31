@@ -51,31 +51,40 @@
 </style>
 
 <script lang="ts">
-  import {onMount} from 'svelte'
+  import page from 'page'
 
-  let count = 0
-  onMount(() => {
-    const interval = setInterval(() => count++, 1000)
-    return () => {
-      clearInterval(interval)
-    }
-  })
+  import FeelsDark from './FeelsDark.svelte'
+  import SvelteDemoApp from './SvelteDemoApp.svelte'
+
+  let component: any = FeelsDark
+
+  page.redirect('/', '/feels-dark')
+  page('/feels-dark', () => (component = FeelsDark))
+  page('/svelte-demo-app', () => (component = SvelteDemoApp))
+
+  page.start()
 </script>
 
 <div class="App">
-  <header class="App-header">
-    <img src="/logo.svg" class="App-logo" alt="logo" />
-    <p>Edit <code>src/App.svelte</code> and save to reload.</p>
-    <p>Page has been open for <code>{count}</code> seconds.</p>
-    <p>
-      <a
-        class="App-link"
-        href="https://svelte.dev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn Svelte
-      </a>
-    </p>
-  </header>
+  <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <ul class="flex">
+      <li class="mr-6">
+        <a
+          href="/feels-dark"
+          class="text-blue-500 hover:text-blue-800"
+          class:active={component === FeelsDark}>Feels Dark</a
+        >
+      </li>
+      <li class="mr-6">
+        <a
+          href="/svelte-demo-app"
+          class="text-blue-500 hover:text-blue-800"
+          class:active={component === SvelteDemoApp}>Svelte Demo App</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <svelte:component this={component} />
+  </main>
 </div>
