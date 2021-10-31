@@ -17,6 +17,9 @@ start-app2:
 start-simple-conference-app:
 	pushd simple-conference-app && npm install && npm start
 
+start-feel-demos:
+	pushd feel-demos && npm install && npm start
+
 # Development
 prettier:
 	bin/makefile/prettier

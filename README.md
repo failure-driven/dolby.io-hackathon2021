@@ -46,6 +46,14 @@ make deploy
   - deployed to https://dolbyio-simple-conference-app.netlify.app/
   - [![Netlify Status](https://api.netlify.com/api/v1/badges/899ea433-8e7f-4a78-ab14-79f8a7a8bec9/deploy-status)](https://app.netlify.com/sites/dolbyio-simple-conference-app/deploys)
 
+- [feel-demos](/feel-demos)
+  ```
+  source bin/load-env
+  make feel-demos
+  ```
+  - deployed to https://dolbyio-feel-demos.netlify.app/
+  - [![Netlify Status](https://api.netlify.com/api/v1/badges/98137af0-8268-4f5c-adb1-93299f1a21aa/deploy-status)](https://app.netlify.com/sites/dolbyio-feel-demos/deploys)
+
 ## ansible vault
 
 secrets are held in env/*.secerts

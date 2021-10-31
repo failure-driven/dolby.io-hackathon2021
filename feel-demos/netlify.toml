@@ -1,0 +1,5 @@
+[build]
+  base = "feel-demos/"
+  publish = "build"
+  command = "npm run build"
+  environment = { NODE_VERSION = "14.16.1" }
