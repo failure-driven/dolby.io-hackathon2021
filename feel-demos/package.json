@@ -2,7 +2,9 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.ts\""
+    "test": "web-test-runner \"src/**/*.test.ts\"",
+    "lint": "eslint --fix --quiet src --ext .js,.svelte",
+    "format": "prettier --write '{public,src}/**/*.{css,html,js,svelte}'"
   },
   "dependencies": {
     "svelte": "^3.37.0"
@@ -19,12 +21,19 @@
     "@types/chai": "^4.2.17",
     "@types/mocha": "^8.2.2",
     "@types/snowpack-env": "^2.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
     "@web/test-runner": "^0.13.3",
     "chai": "^4.3.4",
     "cssnano": "^5.0.8",
+    "eslint": "^8.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-svelte3": "^3.2.1",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
     "snowpack": "^3.8.7",
     "svelte-preprocess": "^4.7.2",
     "tailwindcss": "^2.2.19",
