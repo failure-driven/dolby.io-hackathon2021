@@ -56,7 +56,9 @@
   import FeelsDark from './FeelsDark.svelte'
   import SvelteDemoApp from './SvelteDemoApp.svelte'
 
-  let component: any = FeelsDark
+  import type {SvelteComponent} from 'svelte'
+
+  let component: typeof SvelteComponent = FeelsDark
 
   page.redirect('/', '/feels-dark')
   page('/feels-dark', () => (component = FeelsDark))
